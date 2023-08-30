@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;interfaceEg&apos; to &apos;InterfaceEg&apos;&#x0D;&#x0A;- Original project: &apos;HelloWorld&apos;&#x0D;&#x0A;- Original element: &apos;interfaceEg&apos;&#x0D;&#x0A;- Renamed element: &apos;InterfaceEg&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;interfaceEg&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{interfaceEg.java[interfaceEg" matchStrategy="1" name="InterfaceEg" qualified="false" references="true" similarDeclarations="false" stamp="1692599593550" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,15 @@
+
+class Product
+{
+	int id;
+	String name;
+	float price;
+}
+public class Streams8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

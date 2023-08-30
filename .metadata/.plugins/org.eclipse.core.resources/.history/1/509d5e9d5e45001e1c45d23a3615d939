@@ -1,0 +1,63 @@
+
+class ABC implements Runnable
+{
+	public void run()
+	{
+		try {
+			//state of timed waiting
+			Thread.sleep(500);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("State of Thread: "+t2.getState());
+		try
+		{
+			Thread.sleep(600);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+}
+public class ThreadStates implements Runnable {
+
+	public static Thread t1;
+	public static ThreadStates ts1;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ts1=new ThreadStates();
+		t1=new Thread(ts1);
+		System.out.println("State of Thread 1: "+t1.getState());
+		t1.start();//t1 thread to be in active state
+		System.out.println("State of Thread t1 after invoking start() : "+t1.getState());
+	}
+	public void run()
+	{
+		ABC abcThread=new ABC();
+		Thread t2=new Thread(abcThread);
+		System.out.println("State of Thread t2:"+t2.getState());
+		t2.start();
+		System.out.println("State of Thread t2 after start(): "+t2.getState());
+		try
+		{
+			Thread.sleep(500);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("State of Thread T2 after Sleep(): "+t2.getState());
+		try
+		{
+			t2.join();
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("State of Thread t2 when it completes execution: "+t2.getState());
+	}
+}

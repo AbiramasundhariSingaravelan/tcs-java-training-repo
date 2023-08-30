@@ -1,0 +1,19 @@
+package com.example.demo;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapInterfaceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Map<String,Integer> mapObj=new HashMap<String,Integer>();
+		mapObj.put("Aa", 100);
+		mapObj.put("Bb", 200);
+		mapObj.put("Cc", 300);
+		mapObj.put("Dd", 400);
+		mapObj.put("Ee", 500);
+	}
+
+}

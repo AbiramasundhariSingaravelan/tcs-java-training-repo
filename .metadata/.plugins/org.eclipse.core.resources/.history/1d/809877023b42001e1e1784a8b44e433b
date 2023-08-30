@@ -1,0 +1,21 @@
+package com.example.demo;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListInterfaceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<String> studList=new ArrayList<String>();
+		studList.add("Arthi");
+		studList.add("Abinaya");
+		studList.add("Sahana");
+		studList.add("Devasena");
+		studList.add("Sanjana");
+		//First Method
+		System.out.println(studList);
+	}
+
+}

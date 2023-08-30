@@ -1,0 +1,40 @@
+
+class ABC implements Runnable
+{
+	public void run()
+	{
+		try {
+			//state of timed waiting
+			Thread.sleep(500);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		System.out.println("State of Thread: "+Thread.getState());
+		try
+		{
+			Thread.sleep(600);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+}
+public class ThreadStates implements Runnable {
+
+	public static Thread t1;
+	public static ThreadStates ts1;
+	public void run()
+	{
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ts1=new ThreadStates();
+		t1=new Thread(ts1);
+		System.out.println("State of Thread 1: "+t1.getState());
+	}
+
+}

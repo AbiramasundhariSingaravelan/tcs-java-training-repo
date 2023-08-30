@@ -1,0 +1,18 @@
+
+public class ExceptionDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int r=0;
+		try
+		{
+		 r=5/0;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Cannot Divide By Zero.");
+		}
+		System.out.println(r);
+	}
+
+}

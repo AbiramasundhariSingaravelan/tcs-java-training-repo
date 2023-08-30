@@ -1,0 +1,26 @@
+package com.example.demo;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class MapInterfaceDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Map<String,Integer> mapObj=new HashMap<String,Integer>();
+		mapObj.put("Aa", 100);
+		mapObj.put("Bb", 200);
+		mapObj.put("Cc", 300);
+		mapObj.put("Dd", 400);
+		mapObj.put("Ee", 500);
+		System.out.println(mapObj);
+		for(Entry e : mapObj.entrySet())
+		{
+			System.out.println("Key Value: "+e.getKey()+" Value:"+e.getValue());
+
+		}
+	}
+
+}
