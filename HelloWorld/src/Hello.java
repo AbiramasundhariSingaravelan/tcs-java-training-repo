@@ -5,11 +5,9 @@ public class Hello {
 	 
 	public static void main(String[] args)
 	{
-		int a;
-		System.out.println("Enter the value:");
-		//Object Creation
-	//	Scanner s=new Scanner(System.in);
-		//a=s.nextInt();
-		System.out.println("Hello World! Entered Value: " +a);
+		 List < int > intList = new ArrayList < > ();
+	        intList.add(10);
+	        intList.add(20);
+	        System.out.println("The list is: " + intList);
 	}
 }
